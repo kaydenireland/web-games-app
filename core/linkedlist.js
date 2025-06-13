@@ -82,6 +82,11 @@ export class LinkedList{
     isEmpty(){
         return !this.head;
     }
+
+    // TODO: Add, Remove, Find Methods Using Index
+    // Index starts at 0
+    // TODO: Add, Remove Methods Using Values
+    // TODO: Possible Double Linked List
 }
 
 //let list = new LinkedList();
