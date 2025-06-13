@@ -2,20 +2,42 @@
 <html lang="en">
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Solitaire</title>
+      <title>Solitaire | Card Games</title>
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id = "navbar">Nav</div>
 
-    <div id = "gameContainer">
-      <canvas id="gameCanvas" height="600px" width = "800px"></canvas>
-      Game
+    <div class = "navbar">
+      <nav>
+        <a href = "/index.html">Home</a>
+        <a href = "solitaire.html">Solitaire</a>
+        <a class="navSplit">Account</a>
+      </nav>
     </div>
 
-    <div id = "rulesContainer">Rules</div>
+    <div id = "gameContainer">
+      <canvas id="gameCanvas" height="675" width = "1200"></canvas>
+    </div>
 
-    <div id = "statsContainer">Stats</div>
+    <div id = "rulesContainer">
+      <h2>Solitaire Rules</h2>
+      <p>Lorem Ipsum</p>
+      <p>Click and drag cards to move them.</p>
+    </div>
+
+    <div id = "statsContainer">
+      <h2>Stats</h2>
+      <p>Games Played: 0 | Wins: 0 | Win %: 0</p>
+      <p>High Score: 0 | Fastest Time: 0:00 | Lowest Moves: 0</p>
+    </div>
+
+    <div id = "infoContainer">
+      <p>&copy; Kallen 2025. Report Issues to the
+        <a href = "https://github.com/kaydenireland/web-games-app">GitHub</a>
+      </p>
+    </div>
+
+  <script type="module" src="main.js"></script>
 
   </body>
 </html>
