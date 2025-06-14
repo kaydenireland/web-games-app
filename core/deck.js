@@ -15,4 +15,8 @@ export class Deck {
         }
     }
 
+    shuffle(){
+        this.cards.shuffle();
+    }
+
 }

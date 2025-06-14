@@ -87,9 +87,38 @@ export class LinkedList{
     // Index starts at 0
     // TODO: Add, Remove Methods Using Values
     // TODO: Possible Double Linked List
+
+    // Convert to array
+    toArray() {
+        const arr = [];
+        let current = this.head;
+        while (this.head) {
+            arr.push(this.pop());
+            current = this.head;
+        }
+        return arr;
+    }
+
+    // Load from array
+    fromArray(cards) {
+        this.head = null;
+        for (const card of cards) {
+            this.push(card);
+        }
+    }
+
+    shuffle() {
+        const arr = this.toArray();
+
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+
+        this.fromArray(arr);
+    }
 }
 
-//let list = new LinkedList();
 
 
 
