@@ -16,7 +16,3 @@ export class Deck {
     }
 
 }
-
-let deck = new Deck();
-console.log(deck.cards.pop());
-console.log(deck.cards.getList());
